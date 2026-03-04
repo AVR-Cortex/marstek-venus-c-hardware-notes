@@ -3,8 +3,9 @@ Reverse engineering notes, hardware analysis, and extracted content from the Mar
 
 Opening the unit:
 - Using a cutter knife, cut along the silicone seal between the acrylic front panel and the metal case. Insert the knife about 15mm and try not to scratch the backside of the acrylic plate as it is printed on the back side (if you want to keep it nice looking)
-- The acrylic plate is fixed to the metal case with a generous amount of double-sided foam tape
+- The acrylic plate is fixed to the metal case with a generous amount of double-sided foam tape. To remove the plate, pry with you fingers between case and plate. After a while, the foam tape will come off or rip in halves. Take time.
 - The metal case has a 'front door' held in place by 3 countersunk M4 screws, which may be partly covered by the foam tape
+- Limited access is possible by removing the 4 hex screws of the connector panel and gently pulling it out
 
 Misc findings:
 - The whole unit has a decent build quality, the components are from ok brands, the electrolytic capacitors may be a little on the cheap side
