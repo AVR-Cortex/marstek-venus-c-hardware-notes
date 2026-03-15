@@ -12,12 +12,19 @@ Misc findings:
 
 General topology:
 - The on/off button on the connector panel is connected to the BMS and switches the battery voltage to the Converter PCB. This means that the Converter/Control PCBs are powered down and are safe to work on when the green light of the button is off.
+- The BMS is connected to the Control PCB via CAN bus and RS485. This RS485 connection is the same as the external RS485. The function of the RS485 connection is somewhat unclear. The whole device is a Modbus slave, maybe the BMS answers on some adresses and the Control on others. As long as there is Modbus communication, the device does not shut down. Maybe the RS485 connetion is used as keep-awake function.
 - The DC-link is the centerpiece of the system
 
 Control PCB:
 - main control MCU STM32G474VET6
 - SWD pin header
 - reset button
+- GoldCap on MCU Vbatt pin. Likely to keep RAM / RTC contents
+- separate EEPROM for configuration and maybe calibration
+- auxiliary isolated flyback to convert battery voltage to DC-link voltage
+- auxiliary isolated flyback to convert DC-link voltage to several 12V-ish voltages on the primary and secondary side
+- several quad opamps used for analog signal conditioning of the many voltage and current measurements
+- several HC08 AND-gates between MCU and the isolated gatedrivers on the converter PCB. Probably some kind of emergency-shutdown when the software runs amok.
 
 LED PCB:
 - the fuel gauge segments are made of 4 LEDs, the status segments are made of 2 LEDs
