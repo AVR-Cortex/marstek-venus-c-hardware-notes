@@ -19,7 +19,9 @@ Reverse engineering notes, hardware analysis, and extracted content from the Mar
 
 ### Control PCB:
 - Main control MCU STM32G474VET6
-- SWD pin header
+- SWD on an unpopulated pin header. Signal names are on the silkscreen
+- some internal status LEDs
+- some unmarked unpopulated pin headers. Maybe STM32 UART connections for debug messages (can be seen in Remko's decomplied firmwares).
 - Reset button
 - Quectel WiFi-module connected to a UART on the MCU. The WiFi-module debug UART is routed to an unpopulated pin header.
 - GoldCap on MCU Vbatt pin. Likely to keep RAM / RTC contents
