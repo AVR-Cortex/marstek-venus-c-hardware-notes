@@ -9,6 +9,7 @@ Opening the unit:
 
 Misc findings:
 - The whole unit has a decent build quality, the components are from ok brands, the electrolytic capacitors may be a little on the cheap side
+- The PCBs are partly painted with a hard coating to prevent moisture damage. This makes probing signals on fine-pitch components difficult.
 
 General topology:
 - The on/off button on the connector panel is connected to the BMS and switches the battery voltage to the Converter PCB. This means that the Converter/Control PCBs are powered down and are safe to work on when the green light of the button is off.
