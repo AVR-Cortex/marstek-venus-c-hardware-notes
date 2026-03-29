@@ -62,7 +62,7 @@ The inside of this thing is DANGEROUS. There are lethal voltages present inside.
 ### STM32G474:
 - no readout protection
 - can be powered through SWD connector via ST-link
-- there is a custom bootloader at the beginning of the flash (9x08000000 to 0x08002800, 10kB)
+- there is a custom bootloader at the beginning of the flash (0x08000000 to 0x08002800, 10kB)
 - the firmware *.bin files in Remko's firmware archive do not contain the bootloader. If flashed to the MCU, the MCU does not start up.
 - the flashdump is from a unit with a 1.53 firmware. When flashed to another unit, the unit is working.
 - It should be possible to combine other firmware versions locating them at 0x08002800 with the bootloader part and flash them on th MCU.
