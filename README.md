@@ -1,6 +1,6 @@
 # marstek-venus-c-hardware-notes
 Reverse engineering notes, hardware analysis, and extracted content from the Marstek Venus C plug-in home battery 
-### Disclaimer
+### Warning
 The inside of this thing is DANGEROUS. There are lethal voltages present inside. The short circuit current of the battery melts metal (think tools and jewellery!). Do not mess around with this thing if you are not qualified to do so. I'm an electronics engineer with 20 years of experience designing off-line SMPS for a living.
 
 ### Opening the unit:
@@ -64,5 +64,5 @@ The inside of this thing is DANGEROUS. There are lethal voltages present inside.
 - can be powered through SWD connector via ST-link
 - there is a custom bootloader at the beginning of the flash (0x08000000 to 0x08002800, 10kB)
 - the firmware *.bin files in Remko's firmware archive do not contain the bootloader. If flashed to the MCU, the MCU does not start up.
-- the flashdump is extracted from a unit with a 1.53 firmware. When flashed to another unit, the unit is working.
+- the flashdump is extracted from a unit with a 1.53 firmware. When flashed to another unit (that bricked itself during initial firmware update), the unit is working.
 - It should be possible to combine other firmware versions locating them at 0x08002800 with the bootloader part and flash them on th MCU.
