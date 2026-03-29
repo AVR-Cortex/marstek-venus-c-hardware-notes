@@ -66,3 +66,7 @@ The inside of this thing is DANGEROUS. There are lethal voltages present inside.
 - the firmware *.bin files in Remko's firmware archive do not contain the bootloader. If flashed to the MCU, the MCU does not start up.
 - the flashdump is extracted from a unit with a 1.53 firmware. When flashed to another unit (that bricked itself during initial firmware update), the unit is working.
 - It should be possible to combine other firmware versions locating them at 0x08002800 with the bootloader part and flash them on th MCU.
+
+⚠️ Disclaimer
+
+This repository is provided for educational and research purposes only. Reverse engineering and firmware extraction may violate terms of service or warranty agreements. Use responsibly and ensure compliance with local laws.
