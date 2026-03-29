@@ -27,6 +27,7 @@ The inside of this thing is DANGEROUS. There are lethal voltages present inside.
 - some unmarked unpopulated pin headers. Maybe STM32 UART connections for debug messages (can be seen in Remko's decompiled firmwares).
 - Reset button
 - Quectel WiFi-module connected to a UART on the MCU. The WiFi-module debug UART is routed to an unpopulated pin header.
+- The WiFi module has an IPEX-4 connector which is connected to an IPEX-to-FAKRA cable (which is fixed to the PCB with white silicone glue). The Antenna has a FAKRA connector. As the WiFi module is on the edge of the PCB near the connector panel it is possible to connect a different Antenna or cable through the connector panel. This would make it possible to use a directional antenna in case of WiFi signal strength issues.
 - GoldCap on MCU Vbatt pin. Likely to keep RAM / RTC contents
 - Separate FM24C1024A I2C EEPROM for configuration and maybe calibration
 - There is a bridge rectifier with 2 resistors and a normally-closed relay in series between AC input and the DC link. This seems to be a bootstrap circuit to supply the control circuitry if the BMS does not switch the battery voltage on.
